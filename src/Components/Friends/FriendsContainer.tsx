@@ -1,4 +1,4 @@
-import { useAppActions, useAppSelector } from '../redux/redux';
+import { useAppActions, useAppSelector } from '../../redux/redux';
 
 function FriendsContainer() {
   const { friends } = useAppSelector((state) => state.userReducer);

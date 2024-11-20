@@ -1,11 +1,12 @@
 import React from 'react';
 import Nav from "./Components/Nav/Nav";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
-import UserContainer from "./Components/UserContainer";
-import PostContainer from "./Components/PostContainer";
-import FriendsContainer from "./Components/FriendsContainer";
+import UserContainer from "./Components/Users/UserContainer";
+import PostContainer from "./Components/Posts/PostContainer";
+import FriendsContainer from "./Components/Friends/FriendsContainer";
 import ToDoListContainer from "./Components/TodoList/ToDoListContainer";
-import Login from "./Components/Login";
+import Login from "./Components/Login/Login";
+import Framer from "./Components/Framer/Framer";
 
 function App() {
     return (
@@ -15,6 +16,7 @@ function App() {
                 <div>
                     <Routes>
                         <Route path='/users' element={<UserContainer/>}/>
+                        <Route path='/' element={<Framer/>}/>
                         <Route path='/posts' element={<PostContainer/>}/>
                         <Route path='/friends' element={<FriendsContainer/>}/>
                         <Route path='/todolist' element={<ToDoListContainer/>}/>

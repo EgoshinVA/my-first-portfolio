@@ -1,4 +1,4 @@
-import {postAPI} from "../store/reducers/Posts.api";
+import {postAPI} from "../../store/reducers/Posts.api";
 
 function PostContainer() {
     const {isLoading, error, data: posts} = postAPI.useFetchPostsQuery(5)

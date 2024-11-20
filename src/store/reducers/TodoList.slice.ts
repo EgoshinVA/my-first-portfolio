@@ -77,3 +77,6 @@ export const todoListSlice = createSlice({
         }
     }
 })
+
+export const {addTodoList, deleteTodoList, addTask, deleteTask, completeTask, changeFilter} = todoListSlice.actions
+export default todoListSlice.reducer

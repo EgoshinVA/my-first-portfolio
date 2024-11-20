@@ -1,6 +1,6 @@
-import {useAppActions, useAppSelector} from "../redux/redux";
-import {usersAPI} from "../store/reducers/Users.api";
-import {IUser} from "../modules/IUser";
+import {useAppActions, useAppSelector} from "../../redux/redux";
+import {usersAPI} from "../../store/reducers/Users.api";
+import {IUser} from "../../modules/IUser";
 
 function UserContainer() {
     const {friends} = useAppSelector(state => state.userReducer)

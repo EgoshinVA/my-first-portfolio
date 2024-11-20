@@ -25,3 +25,6 @@ export const userSlice = createSlice({
         }
     }
 })
+
+export const {addFriend, deleteFriend} = userSlice.actions
+export default userSlice.reducer
